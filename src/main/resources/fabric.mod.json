@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "chunk-fetcher",
+	"version": "${version}",
+	"name": "Chunk Fetcher",
+	"description": "A mod to fetch and analyze chunk data within render distance.",
+	"authors": [
+		"NoveeX"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/chunk-fetcher/logo.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.noveex.ChunkFetcher"
+		],
+		"fabric-datagen": [
+			"me.noveex.ChunkFetcherDataGenerator"
+		]
+	},
+	"mixins": [
+		"chunk-fetcher.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
